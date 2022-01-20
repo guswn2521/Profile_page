@@ -1,0 +1,25 @@
+@import url(./reset.css);
+
+.container-fluid{
+    
+    padding: 0;
+    /* width: 100%; */
+    color: #2e294e;
+
+}
+.top_content{
+
+    background-color: #091334;
+}
+.middle_content{
+    
+    background-color:#f8c9ca;
+}
+.main_content{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 3%;
+    
+}
+
