@@ -1,78 +1,179 @@
 @import url(./reset.css);
-*{
+* {
     box-sizing: border-box;
 }
-a{
+
+a {
     color: black;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
-    padding:0 4%;
     /* justify-content: center; */
     /* align-items: center; */
 }
-.header_menu{
+
+.header {
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.header_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 3% 5%;
 }
 
-.burgers{
+.header_menu a>i {
+    font-size: 26px;
+}
+
+.burgers {
     width: 20px;
     height: 3px;
     margin: 4px;
     background-color: black;
-
 }
 
-.bell_notice{
+.bell {
+    position: relative;
+}
+
+.bell_notice {
     position: absolute;
-    background-color: rgb(199, 20, 20);
+    background-color: rgba(199, 56, 20, 0.794);
     border-radius: 50%;
-    width: 13px;
-    height: 12px;
-    font-size: 12px;
-    color:white;
+    width: 1.1rem;
+    height: 1.1rem;
+    font-size: 1rem;
+    color: white;
     text-align: center;
-    padding-top: 2px;
-    top: 0.5%;
-    right: 23.5%;
+    top: -0.7rem;
+    right: -0.7rem;
 }
 
-.backimage{
-    border: 1px solid #1776F1;
-    height: 5%;
+.backimage {
+    margin: 2.7% 4% 18% 4%;
+    /* border: 1px solid #1776f1; */
+    height: 28vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1596775218323-9b8276975108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9oYW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
 }
-.backimage_img{
+
+.profileimage {
+    width: 39vw;
+    height: 39vw;
+    z-index: 10;
+    position: absolute;
+    top: 60%;
+}
+
+.profileimage>img {
+    border: 5px solid white;
     width: 100%;
     height: 100%;
-    border-radius:4%;
-    background:no-repeat cover center;
+    border-radius: 50%;
 }
 
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    padding-bottom: 8%;
+    border-bottom: 1px solid #f8c9ca;
+}
 
+.name {
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, sans-serif;
+    color: black;
+    margin-top: 1rem;
+}
 
+.profile_message {
+    font-size: 1.2rem;
+    color: rgb(97, 97, 97);
+    margin-top: 1rem;
+}
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+}
 
-.bigScreen{
+.info {
+    padding: 3%;
+    font-size: 1.2rem;
+    background-color: #f8c9ca;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_question,
+.main_answer {
+    line-height: 1.4;
+    max-width: 75%;
+    margin-bottom: 5%;
+}
+
+.main_question {
+    width: 100%;
+    display: flex;
+}
+
+.main_question>p,
+.main_answer {
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.main_question>p {
+    border: 3px solid #ffe552;
+    background-color: #fdf0c4;
+}
+
+.question_q {
+    margin-right: 2%;
+}
+
+.main_answer {
+    border: 3px solid #a3b7d3;
+    background-color: #c6e0ff;
+    align-self: flex-end;
+}
+
+.bigScreen {
     display: none;
 }
-@media (min-width:600px) and (max-width:2140px) {
-    .container{
+
+@media (min-width: 760px) and (max-width: 2140px) {
+    .container {
         display: none;
     }
-    .bigScreen{
+    .bigScreen {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #1776F1;
+        background-color: #1776f1;
         width: 100vw;
         height: 100vh;
     }
-    .bigScreen_text{
-        color:white;
+    .bigScreen_text {
+        color: white;
         font-size: 32px;
         font-weight: 700;
     }
