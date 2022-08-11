@@ -85,9 +85,7 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
-.profileimage:hover + .personal_info {
-  margin-top: 15%;
-}
+
 .profileimage > img {
   border: 5px solid white;
   width: 100%;
