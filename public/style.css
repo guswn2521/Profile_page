@@ -193,6 +193,7 @@ a {
   position: fixed;
   right: 3%;
   bottom: 4%;
+  cursor: pointer;
 }
 
 .bigScreen {
